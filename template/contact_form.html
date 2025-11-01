@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+</head>
+<body>
+    <h1>{% if form.instance.pk %}Edit Contact{% else %}Add Contact{% endif %}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+        <a href="{% url 'contact_list' %}">Back</a>
+    </form>
+</body>
+</html>

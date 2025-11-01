@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Book</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>📖 Contact List</h1>
+    <a href="{% url 'contact_create' %}">➕ Add New Contact</a>
+    <ul>
+        {% for contact in contacts %}
+            <li>
+                <strong>{{ contact.name }}</strong> — {{ contact.phone }} — {{ contact.email }}
+                <a href="{% url 'contact_update' contact.id %}">Edit</a> |
+                <a href="{% url 'contact_delete' contact.id %}">Delete</a>
+            </li>
+        {% empty %}
+            <li>No contacts yet.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

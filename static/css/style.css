@@ -1,0 +1,89 @@
+/* style.css - modern contact book styling */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #2f3640;
+}
+
+a {
+    text-decoration: none;
+    color: #487eb0;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #273c75;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border-bottom: 1px solid #dcdde1;
+    text-align: left;
+}
+
+table th {
+    background-color: #f1f2f6;
+}
+
+button {
+    background-color: #44bd32;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #4cd137;
+}
+
+button.delete {
+    background-color: #e84118;
+}
+
+button.delete:hover {
+    background-color: #c23616;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #dcdde1;
+}
+
+form label {
+    font-weight: bold;
+    color: #2f3640;
+}
+
+.form-actions {
+    text-align: center;
+}
